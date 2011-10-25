@@ -1,0 +1,13 @@
+{
+    "name": "Pixastic",
+    "main": "./pixastic.core.js",
+    "description": "JavaScript Image Processing Library",
+    "keywords": ["canvas"],
+    "repository": "https://github.com/enobrev/pixastic",
+    "engines" : {
+        "node" : ">=0.5.2"
+    },
+    "dependencies": {
+        "canvas": ">=0.7.2"
+    }
+}
