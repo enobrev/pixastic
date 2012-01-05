@@ -2,6 +2,7 @@
     "name": "Pixastic",
     "main": "./pixastic.core.js",
     "description": "JavaScript Image Processing Library",
+    "version": "0.1.3",
     "keywords": ["canvas"],
     "repository": "https://github.com/enobrev/pixastic",
     "engines" : {
