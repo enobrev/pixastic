@@ -111,7 +111,6 @@ Pixastic.Actions.colorbalance = {
             _ref2 = [dvh.r, dvh.g, dvh.b], dvhr = _ref2[0], dvhg = _ref2[1], dvhb = _ref2[2];
 
             dim = width * height * 4;
-            console.log("cb dim w*h*4 " + dim);
             i = 0;
             while (i < dim) {
               i1 = i + 1;

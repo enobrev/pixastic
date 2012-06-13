@@ -361,11 +361,11 @@ Pixastic = (function() {
 				return false;
 			}
 
-		    console.log("client has canvas " + Pixastic.Client.hasCanvas() + " useData (put image data ) "+ params.useData);
+            // console.log("client has canvas " + Pixastic.Client.hasCanvas() + " useData (put image data ) "+ params.useData);
 			if (Pixastic.Client.hasCanvas()) {
 				if (params.useData) {
 					if (Pixastic.Client.hasCanvasImageData()) {
-            		    console.log("about to get context and put image data back rect left,top " + options.rect.left + "," + options.rect.top);
+                        // console.log("about to get context and put image data back rect left,top " + options.rect.left + "," + options.rect.top);
 						canvas.getContext("2d").putImageData(params.canvasData, options.rect.left, options.rect.top);
 
 						// Opera doesn't seem to update the canvas until we draw something on it, lets draw a 0x0 rectangle.
@@ -411,7 +411,7 @@ Pixastic = (function() {
 
 		// load the image file
 		process : function(img, actionName, options, callback) {
-		    console.log("pixastic.process img "+ img + " actionName "+ actionName + " options " + JSON.stringify(options));
+            // console.log("pixastic.process img "+ img + " actionName "+ actionName + " options " + JSON.stringify(options));
 			if (Pixastic.Client.isNode()) {
 				var res = Pixastic.applyAction(img, img, actionName, options);
 				if (callback) callback(res);
@@ -421,7 +421,7 @@ Pixastic = (function() {
 				var dataImg = new Image();
 				dataImg.src = img.src;
 				if (dataImg.complete) {
-        		    console.log("A pixastic.process img "+ img + " actionName "+ actionName + " options " + JSON.stringify(options));
+                    // console.log("A pixastic.process img "+ img + " actionName "+ actionName + " options " + JSON.stringify(options));
                     var res = Pixastic.applyAction(img, dataImg, actionName, options);
 					if (callback) callback(res);
 					return res;
