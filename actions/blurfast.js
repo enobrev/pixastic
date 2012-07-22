@@ -56,7 +56,6 @@ Pixastic.Actions.blurfast = {
 			}
 
 			ctx.restore();
-
 			params.useData = false;
 			return true;
 		} else if (Pixastic.Client.isIE()) {
