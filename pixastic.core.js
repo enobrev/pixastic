@@ -236,14 +236,10 @@ Pixastic = (function() {
 				canvas = options.resultCanvas || document.createElement("canvas");
 				ctx = canvas.getContext("2d");
 			}
-
-			var w = img.offsetWidth;
-			var h = img.offsetHeight;
-
-			if (imageIsCanvas) {
+		
 				w = img.width;
 				h = img.height;
-			}
+			
 
             if (!Pixastic.Client.isNode()) {
                 // offsetWidth/Height might be 0 if the image is not in the document
